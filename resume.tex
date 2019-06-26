@@ -1,0 +1,94 @@
+\documentclass {article}
+
+% ----------------- used packages ---------------------
+
+\usepackage {titlesec}
+\usepackage {titling}
+\usepackage [margin=1in]{geometry}
+\usepackage {enumitem}
+\setlist {nosep}
+
+% -----------------------------------------------------
+
+
+
+% ----------------- some formatting -------------------
+\titleformat {\section}
+{\Large\bfseries\uppercase}
+{}
+{0em}
+{}[\titlerule]
+
+% -----------------------------------------------------
+
+
+% -------------command redeclarations -----------------
+
+\renewcommand {\maketitle} {
+	\begin{center}
+
+	{\huge\bfseries \theauthor}
+
+	\input {contact.tex}
+
+	\end{center}
+}
+
+
+% -----------------------------------------------------
+
+\begin {document}
+
+\author {Your name here}
+
+\maketitle
+
+
+% ------------------Technical Skills-------------------
+
+\section {Technical Skills}
+
+\input {technical_skills.tex}
+
+% -----------------------------------------------------
+
+
+% ------------------ Experience -----------------------
+
+\section {Experience}
+
+\input {experience.tex}
+
+% -----------------------------------------------------
+
+
+% ------------------ Education  -----------------------
+
+\section{Education}
+
+\input {education.tex}
+
+% -----------------------------------------------------
+
+
+
+% --------- Achievements and Certifications -----------
+
+\section {Achievements and Certifications}
+
+\input {achievements_and_certifications.tex}
+
+% -----------------------------------------------------
+
+
+
+% ----------------- General Skills -------------------
+
+\section{General Skills}
+
+\input {general_skills.tex}
+
+% -----------------------------------------------------
+
+\end{document}
+
